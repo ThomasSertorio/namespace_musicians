@@ -1,0 +1,6 @@
+<h1>Here come the musicians</h1>
+<ul>
+  <% @musicians.each do |musician| %>
+    <li><%= link_to musician.first_name, musician_user_path(musician) %></li>
+  <% end %>
+</ul>
